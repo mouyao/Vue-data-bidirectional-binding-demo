@@ -1,10 +1,13 @@
-# self-vue
+# Vue数据双向绑定demo
 - vue数据双向绑定原理分析和简单实现
 - 代码总共分为三个版本，v3为最终版本
+- 实现一个监听器Observe,用来劫持并监听所有属性，如果有变动的，就通知订阅者
+- 实现一个订阅者Watcher，可以收到属性的变化通知并执行相应的函数，从而更新视图
+- 实现一个解析器Compile，可以扫描和解析每个节点的相关指令，并根据初始化模板数据以及初始化相应的订阅器（v-model绑定功能的实现）
 
 ## 效果图
 ![Mou icon](./selfvue.gif)
 ## 博客地址
-[http://www.cnblogs.com/canfoo/p/6891868.html](http://www.cnblogs.com/canfoo/p/6891868.html)
+
 
 
